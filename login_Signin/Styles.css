@@ -1,0 +1,47 @@
+body{
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+}
+main{
+    color: aliceblue;
+    background-color:  black;
+    margin: 0 auto;
+    min-width: min-content;
+}
+form{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    gap: 20px;
+    width : 80%;
+    margin: auto;
+}
+#Submit{
+    background-color: green;
+    border-radius: 5px;
+    max-width:100px;
+    float: left;
+}
+#clear{
+    background-color: green;
+    border-radius: 5px;
+    max-width:100px;
+    float: inline-end;
+}
+span{
+    width: 30%;
+}
+label{
+    background-color: black;
+    color: bisque;
+    border-bottom: 10px green;
+}
+input{
+    border-radius: 5px;
+    color: beige;
+    background-color: rgb(36, 35, 35);
+}
+a{
+    color: cornflowerblue;
+}
