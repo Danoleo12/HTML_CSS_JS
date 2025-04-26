@@ -5,10 +5,11 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<title>Dano Dev Sign Up</title>
     	<link rel="stylesheet" type="text/css" href="Styles.css">
+        <script src="sign_up.js" defer></script>
     </head>
     <body>
         <main>
-            <form>
+            <form id="form">
                 <h1>Welcome to Dano Dev</h1>
                 <h3>Create your account</h3>
                 <table>
@@ -17,8 +18,8 @@
                 <label>Enter your first and last name   <input placeholder="Eg: John Doe" type="text" required class="data"></input></label>
                 <label>Enter your phone number  <input placeholder="Numbers only" type="tel" required class="data"></input></label>
                 <label>Enter your email <input placeholder="@ required" type="email" required class="data"></input></label>
-                <label>Enter Password   <input placeholder="Choose password" type="password" class="data" required></input></label>
-                <label>Confirm Password <input placeholder="Repeat your password" type="password" class="data" required></input></label>
+                <label>Enter Password   <input placeholder="Choose password" type="password" class="data" id="Password" required></input></label>
+                <label>Confirm Password <input placeholder="Repeat your password" type="password" class="data" id="RepeatedPass" required></input></label>
                 <label><input type="checkbox" required> I have read and I accept the <a href="https://www.lawinsider.com/clause/conditions-of-utilisation">conditions of utilisation </a></label>
                 <span class="last">
                     <button type="submit" id="Submit">Sign Up</button>
