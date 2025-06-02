@@ -31,3 +31,18 @@
     // Placeholder: Add actual email-sending implementation here
     console.log(`Email sent to ${to}\nSubject: ${subject}\nBody: ${body}`);
   }
+
+  //trying to make the login button fly away
+
+  /*const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const tel = document.getElementById("tel").value;
+  const password = document.getElementById("Password").value;
+  const confirmPassword = document.getElementById("RepeatedPass").value;
+  let passcheck = PasswordMatch(password, confirmPassword);
+
+  let logIn = document.getElementById("logIn").addEventListener("mouseenter", )
+
+  if(name == null || !passcheck || email == null || tel == null){
+    
+  }*/

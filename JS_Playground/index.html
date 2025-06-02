@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Dano Dev Sign Up</title>
+    </head>
+    <body>
+        <main>
+            <button title="Click to play music" style="
+                width: 20px;
+                height: 20px;
+                background-color: green;
+                clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+                border: none;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;"
+                >
+        </button>
+            <div id = "mouse" style="
+            position : absolute;
+            background-color: red;
+            width: 10px;
+            height: 10px;
+            border-radius: 80px;
+            pointer-events: none;
+            " ></div>
+        </main>
+    </body>
+    <script>
+        document.getElementById("mouse").addEventListener("mouseover", (event) => {
+        console.log("mouse over div");
+    });
+        document.addEventListener("mousemove", (event) => {
+        let mouseDiv = document.getElementById("mouse");
+        mouseDiv.style.left = `${event.clientX}px`;
+        mouseDiv.style.top = `${event.clientY}px`;
+    });
+    </script>
+</html>
