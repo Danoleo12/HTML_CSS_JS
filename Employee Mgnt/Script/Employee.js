@@ -5,7 +5,7 @@ class Employee{
         this.firstName = firstName;
         this.lastName = lastName;
         this.EmployeeId = EmployeeId;
-        this.Position = Position; // Reference to the Position class (positionName, Wage)
+        this.Position = new Position(); // Reference to the Position class (positionName, Wage)
         this.Shift = Shift; //Reference to the Shift class; Shift(start, end, location)
     }
 

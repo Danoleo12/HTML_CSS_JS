@@ -1,7 +1,11 @@
 class Shift{
-    constructor(start, end, location){
-        this.start = start;
-        this.end = end;
+    constructor(start, end, location,){
+        if (typeof start !== "date") throw new Error("start must be a time");
+        if (typeof end !== "date") throw new Error("end must be a date");
+        if (typeof location !== "string") throw new Error("Location must be a String");
+
+        this.start = new Date(start).toLocaleTimeString;
+        this.end = new Date(end).toLocaleTimeString;
         this.location = location;
     }
 

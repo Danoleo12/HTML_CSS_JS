@@ -1,19 +1,16 @@
 class Position{
-    constructor(positionName, Wage){
-        this.positionName = positionName;
+    constructor(Wage){
+        
         this.Wage = Wage;
     }
 
     getWage(){
         return this.wage;
     }
-    getPosition(){
-        return this.positionName;
-    }
     setWage(wage){
+        if(position == "Cleaner"){
+            this.wage = 15.70;
+        }
         this.wage = wage;
-    }
-    setPosition(){
-        this.positionName = positionName;
     }
 }
