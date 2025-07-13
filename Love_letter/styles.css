@@ -1,0 +1,86 @@
+body{
+    padding-top: 240px;
+    margin: 0 auto;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.envellop{
+    width: 500px;
+    height: 500px;
+    background-color:rgb(156, 183, 207);
+    border-color: solid black;
+    border-radius: 10px;
+    transition: opacity 5s;
+}
+.paper{
+    background-color:rgb(16, 16, 16);
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    opacity: 0%;
+    transform: translateY(0);
+    transition: transform 5s, opacity 5s;
+}
+
+.heart{
+    background-color: white;
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.heart-left{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    rotate: 45deg;
+}
+.heart-right{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    rotate: -45deg;
+    transform: translate(-30px, -35px)
+}
+
+.heart-bottom{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+    rotate: 45deg;
+    display: inline-block;
+    transform: translateY(35px);
+}
+
+.paper:hover{
+    transform: translateY(-200px);
+    opacity: 100%
+}
+
+@keyframes beat{
+    0%{
+        width: 300px;
+    }
+    50%{
+        width: 400px;
+    }
+    100%{
+        width: 500px;
+    }
+}
