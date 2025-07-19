@@ -6,11 +6,6 @@ body{
     align-content: center;
 }
 
-.text{
-    position:relative
-    margin: 0 auto;
-}
-
 .envellop{
     position: relative;
     width: 500px;
@@ -119,13 +114,6 @@ body{
     0%{
         opacity: 100%;
         border-color: rgb(94, 154, 206) transparent;
-    }
-    40%{
-        opacity: 40%;
-        border-color: rgb(156, 183, 207) transparent;
-    }
-    50%{
-        opacity: 50%;
     }
     100%{
         opacity: 100%;
