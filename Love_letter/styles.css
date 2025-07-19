@@ -2,35 +2,67 @@ body{
     padding-top: 240px;
     margin: 0 auto;
     background-color: azure;
-    display: flex;
     justify-content: center;
     align-content: center;
+}
+
+.text{
+    position:relative
+    margin: 0 auto;
 }
 
 .envellop{
+    position: relative;
     width: 500px;
-    height: 500px;
+    height: 200px;
     background-color:rgb(156, 183, 207);
     border-color: solid black;
-    border-radius: 10px;
-    transition: opacity 5s;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+}
+
+.up{
+    margin: 0 auto;
+    width: 300px;
+    height: 0px;
+    border-style: solid;
+    opacity: 100%;
+    border-width: 0 100px 150px 100px; /*up, right, bottom*/
+    border-color: rgb(156, 183, 207) transparent;
+    transform: rotate(0deg);
+    animation: revealUp 7s;
+}
+.down{
+    position: absolute;
+    margin: 0 auto;
+    width: 300px;
+    height: 0px;
+    border-style: solid;
+    border-top-width: 150px;
+    border-right-width: 100px;
+    border-bottom-width: 0;
+    border-left-width: 100px;
+    border-color: rgb(232, 178, 178) transparent;
+    transform: rotate(0deg);
+    animation: revealDown 5s;
 }
 .paper{
+    position: absolute;
     background-color:rgb(16, 16, 16);
-    width: 80%;
-    height: 500px;
-    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    margin-left: 50px;
     display: flex;
     justify-content: center;
     align-content: center;
-    opacity: 0%;
+    opacity: 0;
     transform: translateY(0);
-    transition: transform 5s, opacity 5s;
+    transition: transform 5s, opacity 4s;
 }
 
 .heart{
-    background-color: white;
-    width: 150px;
+    background-color: rgb(16, 16, 16);;
+    width: 80%;
     height: 200px;
     margin: 0 auto;
     display: flex;
@@ -69,18 +101,33 @@ body{
 }
 
 .paper:hover{
-    transform: translateY(-200px);
+    transform: translateY(-120px);
     opacity: 100%
 }
 
-@keyframes beat{
+@keyframes revealUp {
     0%{
-        width: 300px;
-    }
-    50%{
-        width: 400px;
+        opacity: 0;
+
     }
     100%{
-        width: 500px;
+        opacity: 100%;
+    }
+}
+
+@keyframes revealDown {
+    0%{
+        opacity: 100%;
+        border-color: rgb(94, 154, 206) transparent;
+    }
+    40%{
+        opacity: 40%;
+        border-color: rgb(156, 183, 207) transparent;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
     }
 }
