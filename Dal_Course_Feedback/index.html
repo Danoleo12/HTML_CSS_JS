@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dal Review</title>
+        <link rel="icon" href="" type="image/x-icon"> <!--Add link to website icon here-->
+        <link rel="stylesheet" type="text/css" href="C:\Users\yamdj\git\HTML_CSS_JS\Dal_Course_Feedback\Styles\style.css">
+        <script src="C:/Users/yamdj/git/HTML_CSS_JS/Dal_Course_Feedback/Scripts/scripts.js"></script>
+    </head>
+    <body>
+        <!-- External HTML markup sourced from https://chat.openai.com/share/4c9947d1-a08d-4019-967f-6c1a33879512-->
+        <header id="academiHeader">
+            <h1 id="welcome">Welcome to Dal FeedBack</h1>
+            <p>Here you can: </p>
+            <ul style="list-style: none;">
+                <li>Leave feedback about a course you took</li>
+                
+            </ul>
+            <p style="color: red">*Please don't make a review on a course you didn't take. This was meant to help every student</p>
+        </header>
+
+        <main id="indexMain">
+            <section id="course-search">
+                <form id="searchReview">
+                    <p>Use the search bar to look for feedbacks about a course</p>
+                    <!--User uses search bar to look for a course's faculty eg: CSCI-->
+                    <label for="subject">Subject</label>
+                    <input type="search" name="search" id="subject" placeholder="Eg: CSCI"></input>
+                    <!--User enters course code eg: 1170-->
+                    <label for="code">Course Code</label>
+                    <input type="number" name="search" id="code" placeholder="Eg: 1170"></input>
+                    <input type="submit">
+                </form>
+            </section>
+            
+            <section id="new-comment">
+                <p>Click the button to make a new comment</p>
+                <button id="newComment" onclick="showContent()">Create new comment</button>
+                <form id="create-comment" style="display: none">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="search" id="subject" placeholder="Eg: CSCI"></input>
+                    <!--User enters course code eg: 1170-->
+                    <label for="code">Subject</label>
+                    <input type="number" name="search" id="code" placeholder="Eg: 1170"></input>
+                    <label for="comment">Comment</label>
+                    <input type="text" name="search" id="comment" Enter comment here="Eg: 1170"></input>
+                    <button id="Submit">Submit</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
