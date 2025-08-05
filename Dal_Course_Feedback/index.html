@@ -20,8 +20,10 @@
 
         <main id="indexMain">
             <section id="course-search">
-                <form id="searchReview">
-                    <p>Use the search bar to look for feedbacks about a course</p>
+                <p>Click the button to search for feedback</p>
+                <button id="reviewSearch" onclick="showSearchReview()">Search Feedback</button>
+                <form id="searchReview" style="display: none">
+                    <p>Please enter subject and course code</p>
                     <!--User uses search bar to look for a course's faculty eg: CSCI-->
                     <label for="subject">Subject</label>
                     <input type="search" name="search" id="subject" placeholder="Eg: CSCI"></input>
@@ -34,18 +36,31 @@
             
             <section id="new-comment">
                 <p>Click the button to make a new comment</p>
-                <button id="newComment" onclick="showContent()">Create new comment</button>
+                <button id="newComment" onclick="showCreateComment()">Create new comment</button>
                 <form id="create-comment" style="display: none">
-                    <label for="subject">Subject</label>
+                    <label for="subject" style="display: block">Subject</label>
                     <input type="text" name="search" id="subject" placeholder="Eg: CSCI"></input>
                     <!--User enters course code eg: 1170-->
-                    <label for="code">Subject</label>
+                    <label for="code" style="display: block">Subject</label>
                     <input type="number" name="search" id="code" placeholder="Eg: 1170"></input>
-                    <label for="comment">Comment</label>
+                    <label for="comment" style="display: block">Comment</label>
                     <input type="text" name="search" id="comment" Enter comment here="Eg: 1170"></input>
-                    <button id="Submit">Submit</button>
+                    <button id="Submit" style="display: block; margin-top: 20px;">Submit</button>
                 </form>
             </section>
         </main>
+        <footer>
+            <h3>We are not affiliated to Dalhousie Univerty</h3>
+            <p style="color: red">This was made by a Dalhousie Student for Dalhousie students</p>
+            <section id="contact">
+                <p>Connect with develloppers</p>
+                <a href="https://www.linkedin.com/in/yamdjio-ditchou-danick-leonel-558896293?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJTrMUWYDSsOE7dOx0GJN6A%3D%3D">
+                    <img src="C:\Users\yamdj\git\HTML_CSS_JS\Dal_Course_Feedback\Mutimedia\linkedIn.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:D.Ditchou@dal.ca">
+                    <img src="C:\Users\yamdj\git\HTML_CSS_JS\Dal_Course_Feedback\Mutimedia\Outlook.png" alt="Outlook">
+                </a>
+            </section>
+        </footer>
     </body>
 </html>
