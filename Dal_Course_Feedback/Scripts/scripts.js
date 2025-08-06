@@ -8,3 +8,11 @@ function showCreateComment() {
 function showSearchReview() {
     document.getElementById("searchReview").style.display = "block"; //Display the form to search reveiew only when the " button is clicked"
 }
+
+function showSearchProfReview() {
+    document.getElementById("searchProfReview").style.display = "block"; //Display the form to search reveiew only when the " button is clicked"
+}
+
+function showCommentProf(){
+    document.getElementById("create-prof-comment").style.display = "block"; //Display the form to search reveiew only when the " button is clicked"
+}

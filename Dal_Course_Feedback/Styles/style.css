@@ -114,7 +114,9 @@ input[type="text"] {
 input[type="submit"],
 button#Submit,
 button#newComment,
-button#reviewSearch {
+button#reviewSearch,
+button#profReviewSearch,
+button#newProfComment {
   padding: 10px 20px;
   background-color: #0077cc;
   color: #fff;
@@ -128,7 +130,9 @@ button#reviewSearch {
 input[type="submit"]:hover,
 button#Submit:hover,
 button#newComment:hover,
-button#reviewSearch:hover {
+button#reviewSearch:hover,
+button#profReviewSearch:hover,
+button#newProfComment:hover {
   background-color: #005fa3;
 }
 
